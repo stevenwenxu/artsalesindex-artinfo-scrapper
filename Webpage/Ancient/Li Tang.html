@@ -1,0 +1,4426 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-totalPagesToDisplay" />
+ 	<meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Blouin art sales index</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/scss/app.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+
+        var login_status = '';
+
+             if(login_status == "failed") {
+                document.getElementById("signup-popup-6").style.display="table";
+                  
+               login_status="";
+             }
+    });
+	function close6(){document.getElementById("signup-popup-6").style.display="none";}
+    </script>
+    <style type="text/css">
+    /*# Drop Down Contents */
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width:250px;
+    right:0px
+}
+.dropdown-content ul{padding:0}
+.dropdown-content ul li{padding:0px 10px!important}
+.dropdown-content ul li a{color:#000000!important}
+.dropdown-content ul li a:hover{color:#009fe4!important}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+    </style>
+	  <style type="text/css">
+
+#signup-popup-6{display:none;position:fixed;left:0px;top:0px;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.75);z-index:200;}
+.popup-container{display:table-cell;vertical-align:middle;}
+.overlayBox{display:block;margin:0 auto;max-width:600px;background-color:white;border-radius:20px;padding:30px;position:relative;margin:0 25px}
+#close6{display:block;background-color:#fff;border:1px solid #333;border-radius:100%;cursor:pointer;padding:3px 7px;position:absolute;right:-9px;top:-9px;}
+</style>
+	<div id="signup-popup-6">
+		<div class="popup-container">
+			<div class="overlayBox">
+				<i id="close6" onClick="close6()">X</i>
+				User name and Password do not match.
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">
+        function findRedirection() {
+            var qrStr = window.location.search;
+            var spQrStr = qrStr.substring(1);
+            var arrQrStr = new Array();
+            var arr = spQrStr.split('&');
+            var queryvalue = arr[0].split('=');
+            if(!queryvalue[1] || queryvalue[1].length===0 || queryvalue[1]==1) {
+            } else {
+                document.getElementById('ref1').value = 'http://'+queryvalue[1];
+            }
+        }
+
+   </script>
+   <script>
+        function customPopup(p_textMessage){
+
+            jQuery("#textMessage").html("");
+            var html = "<li type='square'>"+p_textMessage+"</li>";
+            jQuery("#textMessage").append(html);
+            jQuery("#popupBackground").removeClass().addClass("show");
+            jQuery("#divGenericHeaderpopup").removeClass().addClass("show");
+            //$("#username").css('border-color','red');
+        }
+        function hideGenericAlert(){
+            jQuery("#popupBackground").removeClass().addClass("hide");
+            jQuery("#divGenericHeaderpopup").removeClass().addClass("hide");
+        }
+</script>
+   <script type="text/javascript">
+        function clearPassword(field){
+            if (field.defaultValue == field.value) field.type = 'password';
+            else if (field.value == '') field.type = 'text';
+            clearText(field);
+        }
+
+        function clearText(field){
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+
+//
+</script>
+  </head>
+  <body>
+  <div id="popupBackground" class="hide" ></div>
+<div id="divGenericHeaderpopup" class="hide">
+    <div class="divpopupheaderTerm">
+        <span id="headertextadhocUser" style="font-family:open_sansbold">Warning</span>
+        <span class="crossbutton" onclick="hideGenericAlert();">x</span>
+    </div>
+    <div class="divpopupcontent">
+        <ul id="textMessage"  style="padding: 30px;padding-left: 15px;font-family:open_sanssemibold;">
+
+        </ul>
+    </div>
+</div>
+    <div class="wrapper homePage">
+<!-- left side menu -->
+    <div id="menu-mobile">
+      <ul class="nav navbar-nav  visible-xs visible-sm visible-md visible-lg">
+        <li><a href="#" class="nav-btn" data-toggle="modal" data-target="#myModal">Sign In</a></li>
+        <li><a href="#" class="nav-btn active">Subscribe</a></li>
+      </ul>
+      <ul class="nav navbar-nav menu">
+        <li role="separator" class="divider"></li>
+        <li><a href="s">Home</a></li>
+        <li role="separator" class="divider"></li>
+       <!--  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+        <li class="active"><a href="/search/artistLanding.ai">Artists <span class="sr-only">(current)</span></a></li>
+       <!--  <li><a href="/marketNewsLanding.jsp">Market News</a></li>
+        <li><a href="calendar.html">Calendar</a></li> -->
+        <li><a href="http://basialerts.artinfo.com/myalert/myalertlist">My Alerts</a></li>
+        <li><a href="/search/myCollections.ai">My Collections</a></li>
+        <li><a href="/search.action">Advanced Search</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/security/support.ai">Contact us</a></li>
+        <li><a href="/faqs.jsp">FAQs</a></li>
+        <li><a href="/user_agreement.jsp">Terms</a></li>
+        <li><a href="/privacy_policy.jsp">Privacy</a></li>
+          <li role="separator" class="divider"></li>
+         <li><a href="/index.jsp"">Blouin Artinfo.com</a></li>
+      </ul>
+    </div>
+<!-- end left side menu -->
+<!-- header -->
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="open-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                   <a class="navbar-brand" href="/index.jsp" title="Blouin Art Sales Index"> <img src="/images/BASI-newlogo.png" alt="banbasi logo" class="img-responsive" /></a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse visible-xs visible-sm visible-md visible-lg" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav visible-md visible-lg">
+             
+              <li class="active"><a href="/search/artistLanding.ai">Artists <span class="sr-only">(current)</span></a></li>
+             <!--  <li><a href="/marketNewsLanding.jsp">Market News</a></li>
+              <li><a href="calendar.html">Calendar</a></li> -->
+              <li><a href="http://www.blouinartinfo.com" target="_blank">Blouin Artinfo.com</a></li>
+            </ul>
+      
+            <ul class="nav navbar-nav navbar-right right-menu visible-xs visible-sm visible-md visible-lg">
+               <li><a href="http://basialerts.artinfo.com/myalert/myalertlist"><i class="fa fa-bell" aria-hidden="true"></i> Alerts</a></li>
+              <li> <a href="/search/myCollections.ai"><i class="fa fa-folder" aria-hidden="true"></i> Collections</a>
+               <li>
+           <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-user-circle" aria-hidden="true" ></i></button>
+              <div class="dropdown-content">
+              <script>
+							 function hideLot(){$(".dropdown-content").hide();}
+								$( ".dropbtn" ).mouseover(function() {
+									  $( ".dropdown-content" ).show();
+									});
+											</script>
+
+              <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+               <ul>
+               <li>
+                    <div class="media">
+                      <div class="media-left">
+                              <i class="fa fa-user-circle" aria-hidden="true" ></i>
+                          
+
+                      </div>
+                      <div class="media-body">
+                      <ul>
+                      <li>
+                      chengzhong 
+                         </li><li>
+                        <h1 class="media-heading" align="left">1zhongcheng8@gmail.com</h1>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li role="separator" class="divider"></li>
+
+                  <li><a id="subscriptionLink" href="/shoppingCart/mysubscriptions.ai" class="link-heading">My Subscriptions &raquo;</a></li>
+                  <li style="color:#777">Manage auto-renewal</a></li>
+                  <li style="color:#777">See payment history</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/security/myaccount.ai" class="link-heading">My Account &raquo;</a></li>
+                  <li style="color:#777">Change your password</li>
+                  <li style="color:#777">View account info</li>
+                   
+                             
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/faqs.jsp"  class="link-heading">Help &raquo;</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/j_spring_security_logout">Sign Out</a></li>
+                  </ul>
+               </div>
+             </div>
+               </li>
+
+
+
+
+
+
+
+
+
+
+                           
+
+            </ul>
+
+            
+
+
+
+
+
+          
+            </div><!-- /.navbar-collapse --><!-- /.navbar-collapse -->
+           <div class="row mt-20 searchSection">
+
+           <div id="newTopSearch" style="margin-top: -6px;"><div class="topSearchInner">
+          <link rel="stylesheet" href="/styles/auto-suggest.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/styles/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font.css"  />
+<link rel="stylesheet" type="text/css" href="/styles/print.css" media="print" />
+<link type="text/plain" rel="author" href="/styles/humans.txt" />
+<link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+
+ <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ <script type="text/javascript"  src="/scripts/bjqs-1.3.js"></script> 
+<script type="text/javascript" src="/scripts/auto-suggest.js"></script>
+<style type="text/css">
+  .float-left{ float: left;}
+</style> 
+<script>
+jQuery(function() {
+try{
+jQuery("#q").suggest("/ajax-handler/AutoSuggestController",
+ {
+  minchars:1
+ });
+}
+catch(err){
+    console.log(err);
+}
+});
+</script> 
+<script>
+function clearPassword(field){
+	if (field.defaultValue == field.value) field.type = 'password';
+	else if (field.value == '') field.type = 'text';
+	clearText(field);
+}
+
+function clearText(field){
+	if (field.defaultValue == field.value) field.value = '';
+	else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+        <form id="quick-search" name="quick-search" action="/ajax-handler/AutoSuggestController" method="get" >
+		<input type ="hidden" name="fullNameSearchSelected" value = "isFullNameSearch"/>
+		<input type="hidden" name="indexName" value="fullname"/>
+		<input type="hidden" name="templateName" value="demoFullName"/>
+		<input type="hidden" name="length" value=""/>
+		<div class="col-xs-12 col-sm-8">
+              <div class="input-group btn-block autosearch">
+               <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" id="q" name="q" class="mainSearch form-control" value="Search for lots by artist's name... " onFocus="clearText(this)" onBlur="clearText(this)" />
+                
+                  <!--  <div class="input-group-btn">
+                   <button type="button" class="btn btn-info">Search</button>
+                 </div>  -->
+                 </div>
+            </div>
+                 <div class="col-xs-12 col-sm-4">
+                  <a href='/search.action' class="advanced-search"><i class="fa fa-search mr-5" aria-hidden="true"></i>Advanced Search</a>
+               </div>
+          
+               </form>
+               
+             
+               
+
+
+
+
+          </div>
+          </div> <!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- Sign in popup -->
+    <div class="modal fade signIn" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Sign In</h4>
+          </div>
+          <div class="modal-body">
+            <form id="loginLightboxForm" name="loginLightboxForm" method="post" action="/j_spring_security_check" onsubmit="findRedirection();">
+              <div class="form-group">
+                <input id="lightboxusername" type="text" name="j_username" value="Username" onFocus="clearText(this)" onBlur="clearText(this)" class="form-control" placeholder="Username or email(case sensitive)">
+                  </div>
+                 <div class="form-group">
+                <input id="lightboxpassword" type="text" name="j_password" value="Password" onFocus="clearPassword(this)" onBlur="clearPassword(this)" class="form-control" placeholder="Password (case sensitive)">
+                 </div>
+                <div class="form-group">
+                <input type="submit" class="btn btn-info  btn-block " value="Submit"/>
+                <input type="hidden" name ="username" id ="ref1" >
+               </div>
+               </form>
+               <div class="form-group">
+                <p class="text-center"><a href="/security/forgotPassword.ai">Forgot your password?</a> | <a href="/security/support.ai">Need help?</a></p>
+                <div class="divider mt-30"></div>
+                <p class="text-center mt-20 mb-20">Don't have an account?</p>
+                <p class="logError text-error" style="display:none">wrong user name and password</p>
+                <form action="/shoppingCart/registration.ai">
+                 <input type="submit" class="btn btn-info btn-block subscribe-btn" value="Subscribe" />
+                          </form>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- end Sign in popup -->
+
+
+
+
+
+
+<link rel="stylesheet" href="/styles/styles.css" type="text/css" media="screen, print" />
+<link rel="stylesheet" href="/styles/main.css" />
+<!-- <script type="text/javascript" src="/scripts/lot-detail.js"></script>
+<script type="text/javascript" src="/scripts/library/ad-server.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript"> google.load("prototype", "1.6"); google.load("scriptaculous", "1.8.1");</script> -->
+<script type="text/javascript">
+ var flagPopUp  = false;
+ var countPopUp = 0;
+ var div_id ='';
+ var divcheckflag = false;
+ window.onclick = function (){
+     if(countPopUp>0 && !flagPopUp){
+         // $j(".savelotpopover").css("display","none");
+         if(div_id != '' && !divcheckflag){
+             $j('#'+div_id).css("display", "none");
+             div_id = '';
+         }
+
+         if(!divcheckflag){
+             countPopUp =0;
+         }
+     } 
+
+     flagPopUp=false;
+     divcheckflag = false;
+
+ };
+ function checkDivClick(){debugger;
+ divcheckflag = true;   
+}
+ function slideMe(menuID,testID){debugger;
+ if(countPopUp >0){
+      if(div_id != ''){
+    	$('#'+div_id).css("display", "none");
+       countPopUp =0;
+  }
+ }
+ 
+ if(div_id!=testID){
+      if(!flagPopUp && countPopUp==0){   
+    	  $('#'+testID).css("display", "block");
+          flagPopUp  = true;
+          countPopUp = 1;
+          div_id = testID;
+      }
+      
+  }
+  else{            
+          $('#'+testID).css("display", "none");
+          flagPopUp  = false;
+          div_id = '';
+          countPopUp = 0; 
+      }           
+} 
+    </script>
+    <script type="text/javascript">
+    
+    function saveLot(input){
+        
+        var rawSelectedListArray =[];
+        for (var i=0;i < document.results.moveToTargetListIds.length; i++) {
+                if(document.results.moveToTargetListIds[i].checked){
+                             rawSelectedListArray[i]=document.results.moveToTargetListIds[i].value;
+                }
+          }
+        if(rawSelectedListArray.length != 0){
+            var url ="/ajax-handler/saveLotController?lotId="+input+"&selectedListIds=";
+           
+            
+            var selectedListArray = rawSelectedListArray.filter(function(x){
+        	    var length = x.toString();
+               return length>0;
+           });
+            
+             
+            for (var j=0;j < selectedListArray.length; j++) {
+                    url=url+'-'+selectedListArray[j];
+            }
+           
+
+            var x = RemoteRequestObject();
+           
+            x.open("GET",url,true);
+
+            x.onreadystatechange=function()
+            {
+                    if(x.readyState == 4 && x.status == 200)
+                    {
+                        refreshPage();
+
+                    }
+            };
+            x.send(null);
+
+            return false;
+        }else{
+            openDeleteLotPopUp();
+        }
+    }
+        function refreshPage(){
+            window.location.reload();
+        }
+        function openDeleteLotPopUp(){
+            findCheckedlots();  
+            jQuery("#deletePopupBackground").removeClass().addClass("show");
+            jQuery("#divDeletePopup").removeClass().addClass("show"); 
+        }
+        function hideLotDelPop(){
+            jQuery("#deletePopupBackground").removeClass().addClass("hide");
+            jQuery("#divDeletePopup").removeClass().addClass("hide"); 
+
+        }
+        function findCheckedlots(){
+            jQuery(".deleteButtonPopUp").css("margin","0px 0px 0px 100px");
+            var checkedcountpopUp=   0;
+            var l_msg       =   '';
+            jQuery("input[name='moveToTargetListIds']:checked").each(function() {
+                checkedcountpopUp = checkedcountpopUp+1;
+            });
+            if(checkedcountpopUp < 1){
+                l_msg   =   'Please select at least one collectionresult';
+                jQuery("#noLots").text(l_msg);                
+            }            
+        }
+    </script>
+    <script type="text/javascript">
+    function createNewCollection(id){
+
+            
+                    jQuery('#'+id+'newCollectionLink').hide();
+                    jQuery('#'+id+'save').hide();
+                    jQuery('.'+id+'newCollectionCreateContainer').show();
+
+                    //textbox to create new collection
+                    var trigTime = 0;
+                    jQuery('.'+id+'newCollectionTextbox').keydown(function(event) {
+                            //var collectionId = $j(event.target).attr("name");
+                            if(event.keyCode == 13) {
+                                    trigTime++;
+                                    event.preventDefault();
+                                    if (trigTime ==1){	renewMenu(id);}
+
+                                    return;
+                            }
+                            return;
+                    });
+            }
+    </script>
+    <script type="text/javascript">
+    function renewMenu(id) {
+                        if(jQuery('.'+id+'newCollectionTextbox').val() != "") {
+                         jQuery.ajax({
+                        type : "POST",
+                        url : "/ajaxResultCarrier.jsp", //submit to this page
+                        data : "actionType=create&newCollection=" + jQuery('.'+id+'newCollectionTextbox').val(),
+                        success : function(msg) {
+                            var index = msg.indexOf(" ");
+                            var newMsg = msg.substring(0,index);
+                            var type = typeof msg;
+                            var newId = newMsg;
+                            jQuery(".addnew_coll_ul")
+                                .prepend('<li class="savelot-item"><input type="checkbox" name="moveToTargetListIds" value="'
+                                                +newId+'" /> <a href="searchSavedLotsFromList.action?userSavedListId='+newId+'" class="collectionLots">'
+                                                                +jQuery('.'+id+'newCollectionTextbox').val()+' (0) lots</a></li>');
+
+                        }
+                        });
+                        }
+                        jQuery('#'+id+'newCollectionLink').show();
+                        jQuery('#'+id+'save').show();
+                        jQuery('.'+id+'newCollectionCreateContainer').hide();
+                        return;
+                }
+                </script>
+       <script type="text/javascript">
+              function RemoteRequestObject()
+            {
+            	 var xhr;
+                if (window.XMLHttpRequest)     // Object of the current windows
+                {
+                    xhr = new XMLHttpRequest();     // Firefox, Safari, ...
+                } else if (window.ActiveXObject)   // ActiveX version
+                {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");  // Internet Explorer
+                }
+
+                return xhr;
+            }
+            </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+    	jQuery("#25").removeClass().addClass("result_pager_label_font_nonClicked");
+        jQuery("#50").removeClass().addClass("result_pager_label_font_nonClicked");
+        jQuery("#100").removeClass().addClass("result_pager_label_font_nonClicked");
+        var myVar = "";
+          myVar ="25";
+        jQuery("#"+myVar).removeClass().addClass("result_pager_label_font_clicked");
+        
+       
+    });
+    
+</script>
+    <script type="text/javascript">
+     
+    function sort() {
+   	if ($('#sort-order').val() == '') return;
+  	$('#sort').val($('#sort-order').val());
+	$('#result-form').submit();
+}
+    
+    function cur() {
+    	if ($('#select-cur').val() == '') return;
+    	$('#currency').val($('#select-cur').val());
+    	$('#result-form').submit();
+    }
+    
+     function turn(toPage) {
+    	if ($('#page').val() == toPage) return;
+    	$('#page').val(toPage);
+      	if (($('#sort').val() == '')) $('#sort').val( '3');
+    	$('#result-form').submit();
+    	         	    } 
+     function pagerFunction(page_req){
+        var p_url   =   location.href;
+    	    var l_action_postition  =   p_url.indexOf("slice");
+    	            if(l_action_postition == -1){
+    	            l_action_postition  =   p_url.indexOf("action");
+    	            p_url   =   p_url.substring(0, l_action_postition+6);
+    	            p_url   =   p_url+'?slice='+page_req;
+    	            }
+    	            else{
+    	            p_url   =   p_url.substring(0, l_action_postition+6);
+    	            p_url   =   p_url+page_req; 
+    	                
+    	            }
+    	    window.location = p_url;
+    	    
+    	}
+        </script>
+  </head>
+  <body id="bodyLOT">
+
+
+    <div class="container">
+      <!------ Search Section -->
+      <div class="searchsection mt-30 mb-30">
+     <!-- 
+        <div class="searchhead">
+           <h2>Blouin Art Sales Index <span></span></h2>
+        </div>
+         <div class="divider"></div> -->
+        <form name="result-form" id="result-form" action="/results.action" theme="simple">
+		<input type="hidden" name="page" id="page" value="" />
+		<input type="hidden" name="sort" id="sort" value="" />
+		<input type="hidden" name="uom" id="uom" value="in" />
+		<input type="hidden" name="dir" id="dir" value="desc" />
+		<input type="hidden" name="currency" id="currency" value="USD" />
+        <input type="hidden" name="slice" id="slice" value="25" />
+	</form>
+	   <div class="searchhead">
+		    
+		 <h2 class="mt-0"><b></b>&rdquo;Tang Li&rdquo;</b></h2>
+		 <p>(16 Results of 16 Total)</p>
+		</div> 
+		<form name="results" id="results" method="post">
+		<div class="options-container clearfix" width="100%">
+                                
+                                <div id="pager_outer_div" class="options" style="padding-top:15px;float:left">
+                                <label class="result_pager_label_font" style="float: left;">RESULTS PER PAGE</label>
+                                <div id="pager_div" style="float: left;padding-left: 10px;">
+                                    <table>
+                                        <tr>                                            
+                                            <td id="25" style="padding-right: 8px;cursor:pointer" onclick="pagerFunction(25);">25</td>
+                                            <td id="50" style="padding-right: 8px;cursor:pointer" onclick="pagerFunction(50);">50</td>
+                                            <td id="100" style="cursor:pointer;" onclick="pagerFunction(100);">100</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                            
+				
+				<div class="options sel2 curancy" style="padding-left:25px; float:right">
+                                    <label>CURRENCY OF SALE</label>
+					
+					<select name="select-cur" onChange="cur();" size="1" id="select-cur" class="right">
+						<option value="EUR" >EUR - Euros</option>
+						<option value="GBP" >GBP - British Pound</option>
+						<option value="USD"  selected="selected" >USD - US Dollar</option>
+					</select>
+				</div>
+				<div class="options sel1 curancy" style="float:right">
+                                    <label>SORT BY</label>
+					
+					<select name="sort-order" onChange="sort();" size="1" id="sort-order">
+						<option value="1" >Sale Price (high to low)</option>
+						<option value="2" >Sale Price (low to high)</option>
+						<option value="3"  selected="selected" >Sale Date</option>
+						<option value="4" >Auction House / Lot Number</option>
+						<option value="5" >Artist</option>
+						<option value="6" >Artwork Title</option>
+						<option value="7" >Year</option>
+						<option value="8" >Medium</option>
+						<option value="9" >Image</option>
+					</select>
+				</div>
+			</div>
+		 <div class="divider mt-30"></div>
+		  <div class="divider"></div>
+		<div class="table-responsive">
+		<table class="table table-condensed">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Sale Date </th>
+            <th>Sale Details</th>
+			<th>Estimate</th>
+			<th>Price Sold</th>
+          </tr>
+        </thead>
+        <tbody>
+	    
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-6604602/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-129691/522.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6604602">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6604602','6604602BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6604602BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6604602save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6604602);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6604602newCollectionLink"
+														onclick="createNewCollection('6604602');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6604602newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6604602newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6604602"
+															class="6604602newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6604602newCollectionButton"
+															onclick="renewMenu('6604602')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-6604602/Landscape-" style="color:#222"/>
+				
+				Attributed to
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-6604602/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              November 28, 2016
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian Hong Kong
+                                                </div>
+			                    <div class="results-lot-info">
+                                                China Guardian HK 2016 Autumn Auctions - Classical Chinese Painting and Calligraphy
+                                                </br>
+			                        Lot522
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 10,311
+															- &#36; 12,889 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 31,941 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-6416658/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-125276/828.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6416658">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6416658','6416658BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6416658BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6416658save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6416658);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6416658newCollectionLink"
+														onclick="createNewCollection('6416658');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6416658newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6416658newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6416658"
+															class="6416658newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6416658newCollectionButton"
+															onclick="renewMenu('6416658')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-6416658/Landscape-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-6416658/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 18, 2016
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                46th China Guardian Quarterly Auction - Chinese Painting and Calligraphy (II)
+                                                </br>
+			                        Lot828
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 27,339
+															- &#36; 33,415 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        Bought In
+				                        
+				                        
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-6388579/[Untitled]-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-122489/136.jpg"
+                                                                                                                                                alt="[Untitled] by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+                                                                                               
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6388579">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6388579','6388579BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6388579BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6388579save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6388579);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6388579newCollectionLink"
+														onclick="createNewCollection('6388579');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6388579newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6388579newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6388579"
+															class="6388579newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6388579newCollectionButton"
+															onclick="renewMenu('6388579')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-6388579/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Li-Tang-6388579/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Wen Peng
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1498,  d. 1573)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-6388579/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 13, 2016
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Waddingtons Toronto
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Asian Art Auction
+                                                </br>
+			                        Lot136
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 311
+															- &#36; 467 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 383 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-6391745/Sailing-out-Gorges-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-125090/5113.jpg"
+                                                                                                                                                alt="Sailing out Gorges by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6391745">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6391745','6391745BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6391745BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6391745save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6391745);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6391745newCollectionLink"
+														onclick="createNewCollection('6391745');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6391745newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6391745newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6391745"
+															class="6391745newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6391745newCollectionButton"
+															onclick="renewMenu('6391745')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-6391745/Sailing-out-Gorges-" style="color:#222"/>
+				
+				Attributed to
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-6391745/Sailing-out-Gorges-" />Sailing out Gorges</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 06, 2016
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Connoisseurship in Ancient Arts:Chinese Classical Paintings and Calligraphy Day Sale
+                                                </br>
+			                        Lot5113
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 21,021 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Xiang-Shengmo-5868913/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-119946/947.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5868913">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5868913','5868913BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5868913BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5868913save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5868913);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5868913newCollectionLink"
+														onclick="createNewCollection('5868913');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5868913newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5868913newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5868913"
+															class="5868913newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5868913newCollectionButton"
+															onclick="renewMenu('5868913')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Xiang-Shengmo-5868913/Landscape-" style="color:#222"/>
+				
+				
+				
+				Xiang Shengmo
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1597,  d. 1658)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Xiang-Shengmo-5868913/Landscape-" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Xiang-Shengmo-5868913/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              April 07, 2015
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Hong Kong
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Classical Chinese Paintings and Calligraphy
+                                                </br>
+			                        Lot947
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 64,497
+															- &#36; 77,396 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        Bought In
+				                        
+				                        
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Wang-Yun-5630462/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-118308/1026.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5630462">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5630462','5630462BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5630462BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5630462save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5630462);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5630462newCollectionLink"
+														onclick="createNewCollection('5630462');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5630462newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5630462newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5630462"
+															class="5630462newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5630462newCollectionButton"
+															onclick="renewMenu('5630462')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Wang-Yun-5630462/Landscape-" style="color:#222"/>
+				
+				
+				
+				Wang Yun
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1652,  d. 1735)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Wang-Yun-5630462/Landscape-" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Wang-Yun-5630462/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              October 06, 2014
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Hong Kong
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Classical Chinese Paintings and Calligraphy
+                                                </br>
+			                        Lot1026
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 38,700
+															- &#36; 64,500 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 68,499 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-6456374/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-126060/ 2826.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6456374">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6456374','6456374BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6456374BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6456374save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6456374);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6456374newCollectionLink"
+														onclick="createNewCollection('6456374');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6456374newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6456374newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6456374"
+															class="6456374newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6456374newCollectionButton"
+															onclick="renewMenu('6456374')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-6456374/Landscape-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-6456374/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              September 17, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                35th China Guardian Quarterly Auctions - Classical Chinese Painting and Calligraphy (II)
+                                                </br>
+			                        Lot2826
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 1,307
+															- &#36; 2,451 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 18,791 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-5038759/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5038759">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5038759','5038759BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5038759BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5038759save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5038759);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5038759newCollectionLink"
+														onclick="createNewCollection('5038759');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5038759newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5038759newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5038759"
+															class="5038759newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5038759newCollectionButton"
+															onclick="renewMenu('5038759')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-5038759/Landscape-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-5038759/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 05, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2013 Spring Auction - Classical Chinese Paintings and Calligraphy
+                                                </br>
+			                        Lot4637
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 32,579
+															- &#36; 48,870 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 37,467 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-5030387/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5030387">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5030387','5030387BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5030387BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5030387save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5030387);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5030387newCollectionLink"
+														onclick="createNewCollection('5030387');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5030387newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5030387newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5030387"
+															class="5030387newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5030387newCollectionButton"
+															onclick="renewMenu('5030387')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-5030387/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-5030387/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              January 20, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 21st Fine Arts Auction - Classic-Chinese Paintings &amp; Calligraphy (V)
+                                                </br>
+			                        Lot4300
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 6,432
+															- &#36; 8,040 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 10,356 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-4754775/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-106932/1895.jpg"
+                                                                                                                                                alt="Landscape by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4754775">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4754775','4754775BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4754775BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4754775save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4754775);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4754775newCollectionLink"
+														onclick="createNewCollection('4754775');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4754775newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4754775newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4754775"
+															class="4754775newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4754775newCollectionButton"
+															onclick="renewMenu('4754775')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-4754775/Landscape-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-4754775/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              September 17, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                31st China Guardian Quarterly Auction - Chinese Painting and Calligraphy VIII
+                                                </br>
+			                        Lot1895
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 31,600
+															- &#36; 63,200 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        Bought In
+				                        
+				                        
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-4676858/The-cow-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4676858">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4676858','4676858BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4676858BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4676858save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4676858);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4676858newCollectionLink"
+														onclick="createNewCollection('4676858');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4676858newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4676858newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4676858"
+															class="4676858newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4676858newCollectionButton"
+															onclick="renewMenu('4676858')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-4676858/The-cow-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-4676858/The-cow-" />The cow</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              May 31, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Council Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Spring 2012 Auction
+                                                </br>
+			                        Lot740
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 86,515
+															- &#36; 94,380 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 112,154 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-4556452/Landscape-and-character-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4556452">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4556452','4556452BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4556452BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4556452save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4556452);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4556452newCollectionLink"
+														onclick="createNewCollection('4556452');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4556452newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4556452newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4556452"
+															class="4556452newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4556452newCollectionButton"
+															onclick="renewMenu('4556452')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-4556452/Landscape-and-character-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-4556452/Landscape-and-character-" />Landscape and character</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 18, 2011
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                26th China Guardian Quarterly Auction
+                                                </br>
+			                        Lot2237
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 4,327
+															- &#36; 5,873 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 39,103 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-4375551/Untitled-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4375551">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4375551','4375551BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4375551BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4375551save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4375551);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4375551newCollectionLink"
+														onclick="createNewCollection('4375551');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4375551newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4375551newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4375551"
+															class="4375551newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4375551newCollectionButton"
+															onclick="renewMenu('4375551')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-4375551/Untitled-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-4375551/Untitled-" />Untitled</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              April 22, 2011
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                14th Fine Art Auction- Chinese Paintings and Calligraphy V
+                                                </br>
+			                        Lot5828
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 461
+															- &#36; 768 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 7,069 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-5064527/Picking-Osmund-grass-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5064527">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5064527','5064527BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5064527BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5064527save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5064527);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5064527newCollectionLink"
+														onclick="createNewCollection('5064527');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5064527newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5064527newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5064527"
+															class="5064527newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5064527newCollectionButton"
+															onclick="renewMenu('5064527')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-5064527/Picking-Osmund-grass-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-5064527/Picking-Osmund-grass-" />Picking Osmund grass</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              December 04, 2010
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                5-Year Anniversary Autumn Auction, Masterpieces Of Classical Chinese Symbolic Literati Painting And Calligraphy Evening Sale
+                                                </br>
+			                        Lot3729
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 525,315
+															- &#36; 750,450 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 605,162 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Li-Tang-3627537/Landscape-After-Li-Tang-(Looking-Out-Onto-The-Snow)-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/missingImages/0887184/14.jpg"
+                                                                                                                                                alt="Landscape After Li Tang (Looking Out Onto The Snow) by Tang Li  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="3627537">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('3627537','3627537BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="3627537BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="3627537save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(3627537);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="3627537newCollectionLink"
+														onclick="createNewCollection('3627537');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="3627537newCollectionCreateContainer"></div>
+												<div id="newCollection" class="3627537newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="3627537"
+															class="3627537newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="3627537newCollectionButton"
+															onclick="renewMenu('3627537')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-3627537/Landscape-After-Li-Tang-(Looking-Out-Onto-The-Snow)-" style="color:#222"/>
+				
+				
+				
+				Li Yin
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1616,  d. 1685)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Li-Tang-3627537/Landscape-After-Li-Tang-(Looking-Out-Onto-The-Snow)-" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-3627537/Landscape-After-Li-Tang-(Looking-Out-Onto-The-Snow)-" />Landscape After Li Tang (Looking Out Onto The Snow)</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper 
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              September 16, 2008
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Sotheby&#039;s New York
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Fine Chinese Ceramics &amp; Works of Art including Chinese and Japanese Art from The Collection of Frieda and Milton Rosenthal
+                                                </br>
+			                        Lot14
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 30,000
+															- &#36; 50,000 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 28,125 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Li-Tang-5043556/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5043556">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5043556','5043556BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5043556BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5043556save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5043556);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5043556newCollectionLink"
+														onclick="createNewCollection('5043556');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5043556newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5043556newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5043556"
+															class="5043556newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5043556newCollectionButton"
+															onclick="renewMenu('5043556')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Li-Tang-5043556/Landscape-" style="color:#222"/>
+				
+				
+				
+				Li Tang
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1055,  d. 1130)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Li-Tang-5043556/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              May 31, 2007
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2007 Spring Auctions- Chinese Ancient Paintings and Calligraphy
+                                                </br>
+			                        Lot504
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 23,524
+															- &#36; 26,138 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 63,254 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+		 </tbody>
+      </table>
+      			<!-- START PAGINATION -->
+			<div class="pagination-bottom clearfix" style="width: 100%;">
+				
+                                
+                                <a href="#" style="pointer-events:none;float:right;"
+                                   onclick="turn(1);return false;">
+                                    <span class="next_last_serch_css" style="opacity:.5;">
+                                        Last   &gt;&gt;</span>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" style="pointer-events:none;float:right;padding-right: 10px;"
+                                   ><span class="next_last_serch_css" style="opacity:.5;">
+                                        Next   &gt;</span>
+                                </a>
+                                
+                                
+                                
+                                
+				<ul id="pagination-digg" style="float:right;padding-right:10px;"><li class="active" style="margin-right: 10px;">1</li></ul> 
+                                
+                                        <a href="#" style="pointer-events:none;float:right;padding-right:10px;"
+						>
+                                            <span class="first_prev_serch_css" style="opacity:.5;">
+                                                 &lt; Previous</span>
+					</a>
+                                
+                                
+                                
+                                <a href="#" style="pointer-events:none;float:right;padding-right:10px;"
+						>
+                                            <span class="first_prev_serch_css" style="opacity:.5;">
+                                                  &lt;&lt; First</span>
+					</a>
+                                
+                                
+                                
+                                
+                                
+                                
+			</div>
+			<!-- END PAGINATION -->
+	</div>
+	<div class="divider"></div>
+	  <div class="col-xs-12 copyright mb-30 mt-30">
+		<!-- <a href="http://artsalesindex.artinfo.com/auctions/San-Yu-6486045/Pink-nude-on-floral-sheet-0">http://artsalesindex.artinfo.com/auctions/San-Yu-6486045/Pink-nude-on-floral-sheet-0</a>
+		<p>Copyright © 2017 Blouin Artinfo Corp. <span class="fright">Page1/1</span></p> -->
+	  </div>
+	
+	</div>
+	</form>
+	</div>
+	<!---------------------- End of container ------------------------------->
+   </div>
+      
+ <div class="clearfix mt-20"></div>
+ <!-- <div class="subscribe-sec">
+     <div class="container"> 
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 text-right">
+            <img src="/images/subscribe-img1.jpg" alt="subscribe-img1" />
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-7 text-center">
+            <h3>Subscribe to Blouin Art+Auction Magazine</h3>
+            <p class="mb-30">Blouin art+Aucton is the internaional art collectors bible and the worldâ€™s<br/> authority on
+inverting in art, antiques and other high end collectibles</p>
+<button class="btn btn-info">Subscribe to Print</button> <button class="btn btn-info">Subscribe to Digital</button>
+          </div>
+        </div>
+       </div>
+    </div> -->
+  <div class="newsLetterSignUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 text-right">
+             <label>Sign up for our Art Market Newsletter</label>
+           </div>
+          <div class="col-xs-12 col-sm-5">
+          <form action="http://artinfo.us1.list-manage.com/subscribe/post" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            	<input type="hidden" name="u" value="a4d8aedc04f0d2309b7aeb6b5" />
+						<input type="hidden" name="id" value="df23dbd3c6" />
+						<input type="hidden" id="mce-group[1]-1-3" name="group[1][8]" value="8" checked="checked" />
+            <div class="input-group">
+              <input  class="form-control" type="email" name="EMAIL" id="mce-EMAIL"  placeholder="Enter Your email address..."  aria-label="Text input with multiple buttons">
+              <div class="input-group-btn">
+                 <button type="submit" class="btn btn-info">SUBSCRIBE</button>
+               </div>
+             </div>
+             </form>
+           </div>
+
+        </div>
+      </div>
+    </div>
+      <footer>
+  <div class="container"> 
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="/index.jsp">Home</a>
+            <a href="/search.action">Advanced Search</a>
+            <a href="/search/artistLanding.ai">Artists Index</a>
+            <a href="/search/artistLanding.ai">Top 100 Artists</a>
+            
+            <a href="/security/support.ai">Contact Us</a>
+            <a href="/faqs.jsp">FAQs</a>
+            <a href="/user_agreement.jsp">Terms</a>
+            <a href="/privacy_policy.jsp">Privacy</a>
+          </div>
+          <div class="col-xs-12 text-center copyright">
+            <p>Copyright &copy; 2017 Blouin Artinfo Corp.</p>
+          </div>
+        </div>
+      </div> 
+      </footer>
+      
+	 
+    </body>
+    </html>

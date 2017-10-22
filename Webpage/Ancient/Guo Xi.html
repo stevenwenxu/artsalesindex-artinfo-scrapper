@@ -1,0 +1,4798 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-totalPagesToDisplay" />
+ 	<meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Blouin art sales index</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/scss/app.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+
+        var login_status = '';
+
+             if(login_status == "failed") {
+                document.getElementById("signup-popup-6").style.display="table";
+                  
+               login_status="";
+             }
+    });
+	function close6(){document.getElementById("signup-popup-6").style.display="none";}
+    </script>
+    <style type="text/css">
+    /*# Drop Down Contents */
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width:250px;
+    right:0px
+}
+.dropdown-content ul{padding:0}
+.dropdown-content ul li{padding:0px 10px!important}
+.dropdown-content ul li a{color:#000000!important}
+.dropdown-content ul li a:hover{color:#009fe4!important}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}
+    </style>
+	  <style type="text/css">
+
+#signup-popup-6{display:none;position:fixed;left:0px;top:0px;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.75);z-index:200;}
+.popup-container{display:table-cell;vertical-align:middle;}
+.overlayBox{display:block;margin:0 auto;max-width:600px;background-color:white;border-radius:20px;padding:30px;position:relative;margin:0 25px}
+#close6{display:block;background-color:#fff;border:1px solid #333;border-radius:100%;cursor:pointer;padding:3px 7px;position:absolute;right:-9px;top:-9px;}
+</style>
+	<div id="signup-popup-6">
+		<div class="popup-container">
+			<div class="overlayBox">
+				<i id="close6" onClick="close6()">X</i>
+				User name and Password do not match.
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">
+        function findRedirection() {
+            var qrStr = window.location.search;
+            var spQrStr = qrStr.substring(1);
+            var arrQrStr = new Array();
+            var arr = spQrStr.split('&');
+            var queryvalue = arr[0].split('=');
+            if(!queryvalue[1] || queryvalue[1].length===0 || queryvalue[1]==1) {
+            } else {
+                document.getElementById('ref1').value = 'http://'+queryvalue[1];
+            }
+        }
+
+   </script>
+   <script>
+        function customPopup(p_textMessage){
+
+            jQuery("#textMessage").html("");
+            var html = "<li type='square'>"+p_textMessage+"</li>";
+            jQuery("#textMessage").append(html);
+            jQuery("#popupBackground").removeClass().addClass("show");
+            jQuery("#divGenericHeaderpopup").removeClass().addClass("show");
+            //$("#username").css('border-color','red');
+        }
+        function hideGenericAlert(){
+            jQuery("#popupBackground").removeClass().addClass("hide");
+            jQuery("#divGenericHeaderpopup").removeClass().addClass("hide");
+        }
+</script>
+   <script type="text/javascript">
+        function clearPassword(field){
+            if (field.defaultValue == field.value) field.type = 'password';
+            else if (field.value == '') field.type = 'text';
+            clearText(field);
+        }
+
+        function clearText(field){
+            if (field.defaultValue == field.value) field.value = '';
+            else if (field.value == '') field.value = field.defaultValue;
+        }
+
+//
+</script>
+  </head>
+  <body>
+  <div id="popupBackground" class="hide" ></div>
+<div id="divGenericHeaderpopup" class="hide">
+    <div class="divpopupheaderTerm">
+        <span id="headertextadhocUser" style="font-family:open_sansbold">Warning</span>
+        <span class="crossbutton" onclick="hideGenericAlert();">x</span>
+    </div>
+    <div class="divpopupcontent">
+        <ul id="textMessage"  style="padding: 30px;padding-left: 15px;font-family:open_sanssemibold;">
+
+        </ul>
+    </div>
+</div>
+    <div class="wrapper homePage">
+<!-- left side menu -->
+    <div id="menu-mobile">
+      <ul class="nav navbar-nav  visible-xs visible-sm visible-md visible-lg">
+        <li><a href="#" class="nav-btn" data-toggle="modal" data-target="#myModal">Sign In</a></li>
+        <li><a href="#" class="nav-btn active">Subscribe</a></li>
+      </ul>
+      <ul class="nav navbar-nav menu">
+        <li role="separator" class="divider"></li>
+        <li><a href="s">Home</a></li>
+        <li role="separator" class="divider"></li>
+       <!--  <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li> -->
+        <li class="active"><a href="/search/artistLanding.ai">Artists <span class="sr-only">(current)</span></a></li>
+       <!--  <li><a href="/marketNewsLanding.jsp">Market News</a></li>
+        <li><a href="calendar.html">Calendar</a></li> -->
+        <li><a href="http://basialerts.artinfo.com/myalert/myalertlist">My Alerts</a></li>
+        <li><a href="/search/myCollections.ai">My Collections</a></li>
+        <li><a href="/search.action">Advanced Search</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/security/support.ai">Contact us</a></li>
+        <li><a href="/faqs.jsp">FAQs</a></li>
+        <li><a href="/user_agreement.jsp">Terms</a></li>
+        <li><a href="/privacy_policy.jsp">Privacy</a></li>
+          <li role="separator" class="divider"></li>
+         <li><a href="/index.jsp"">Blouin Artinfo.com</a></li>
+      </ul>
+    </div>
+<!-- end left side menu -->
+<!-- header -->
+    <header>
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" id="open-menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                   <a class="navbar-brand" href="/index.jsp" title="Blouin Art Sales Index"> <img src="/images/BASI-newlogo.png" alt="banbasi logo" class="img-responsive" /></a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse visible-xs visible-sm visible-md visible-lg" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav visible-md visible-lg">
+             
+              <li class="active"><a href="/search/artistLanding.ai">Artists <span class="sr-only">(current)</span></a></li>
+             <!--  <li><a href="/marketNewsLanding.jsp">Market News</a></li>
+              <li><a href="calendar.html">Calendar</a></li> -->
+              <li><a href="http://www.blouinartinfo.com" target="_blank">Blouin Artinfo.com</a></li>
+            </ul>
+      
+            <ul class="nav navbar-nav navbar-right right-menu visible-xs visible-sm visible-md visible-lg">
+               <li><a href="http://basialerts.artinfo.com/myalert/myalertlist"><i class="fa fa-bell" aria-hidden="true"></i> Alerts</a></li>
+              <li> <a href="/search/myCollections.ai"><i class="fa fa-folder" aria-hidden="true"></i> Collections</a>
+               <li>
+           <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-user-circle" aria-hidden="true" ></i></button>
+              <div class="dropdown-content">
+              <script>
+							 function hideLot(){$(".dropdown-content").hide();}
+								$( ".dropbtn" ).mouseover(function() {
+									  $( ".dropdown-content" ).show();
+									});
+											</script>
+
+              <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+               <ul>
+               <li>
+                    <div class="media">
+                      <div class="media-left">
+                              <i class="fa fa-user-circle" aria-hidden="true" ></i>
+                          
+
+                      </div>
+                      <div class="media-body">
+                      <ul>
+                      <li>
+                      chengzhong 
+                         </li><li>
+                        <h1 class="media-heading" align="left">1zhongcheng8@gmail.com</h1>
+                        </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li role="separator" class="divider"></li>
+
+                  <li><a id="subscriptionLink" href="/shoppingCart/mysubscriptions.ai" class="link-heading">My Subscriptions &raquo;</a></li>
+                  <li style="color:#777">Manage auto-renewal</a></li>
+                  <li style="color:#777">See payment history</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/security/myaccount.ai" class="link-heading">My Account &raquo;</a></li>
+                  <li style="color:#777">Change your password</li>
+                  <li style="color:#777">View account info</li>
+                   
+                             
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/faqs.jsp"  class="link-heading">Help &raquo;</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/j_spring_security_logout">Sign Out</a></li>
+                  </ul>
+               </div>
+             </div>
+               </li>
+
+
+
+
+
+
+
+
+
+
+                           
+
+            </ul>
+
+            
+
+
+
+
+
+          
+            </div><!-- /.navbar-collapse --><!-- /.navbar-collapse -->
+           <div class="row mt-20 searchSection">
+
+           <div id="newTopSearch" style="margin-top: -6px;"><div class="topSearchInner">
+          <link rel="stylesheet" href="/styles/auto-suggest.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="/styles/bootstrap-theme.min.css" />
+<link rel="stylesheet" type="text/css" href="/styles/font.css"  />
+<link rel="stylesheet" type="text/css" href="/styles/print.css" media="print" />
+<link type="text/plain" rel="author" href="/styles/humans.txt" />
+<link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+
+ <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+ <script type="text/javascript"  src="/scripts/bjqs-1.3.js"></script> 
+<script type="text/javascript" src="/scripts/auto-suggest.js"></script>
+<style type="text/css">
+  .float-left{ float: left;}
+</style> 
+<script>
+jQuery(function() {
+try{
+jQuery("#q").suggest("/ajax-handler/AutoSuggestController",
+ {
+  minchars:1
+ });
+}
+catch(err){
+    console.log(err);
+}
+});
+</script> 
+<script>
+function clearPassword(field){
+	if (field.defaultValue == field.value) field.type = 'password';
+	else if (field.value == '') field.type = 'text';
+	clearText(field);
+}
+
+function clearText(field){
+	if (field.defaultValue == field.value) field.value = '';
+	else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+        <form id="quick-search" name="quick-search" action="/ajax-handler/AutoSuggestController" method="get" >
+		<input type ="hidden" name="fullNameSearchSelected" value = "isFullNameSearch"/>
+		<input type="hidden" name="indexName" value="fullname"/>
+		<input type="hidden" name="templateName" value="demoFullName"/>
+		<input type="hidden" name="length" value=""/>
+		<div class="col-xs-12 col-sm-8">
+              <div class="input-group btn-block autosearch">
+               <i class="fa fa-search" aria-hidden="true"></i>
+                  <input type="text" id="q" name="q" class="mainSearch form-control" value="Search for lots by artist's name... " onFocus="clearText(this)" onBlur="clearText(this)" />
+                
+                  <!--  <div class="input-group-btn">
+                   <button type="button" class="btn btn-info">Search</button>
+                 </div>  -->
+                 </div>
+            </div>
+                 <div class="col-xs-12 col-sm-4">
+                  <a href='/search.action' class="advanced-search"><i class="fa fa-search mr-5" aria-hidden="true"></i>Advanced Search</a>
+               </div>
+          
+               </form>
+               
+             
+               
+
+
+
+
+          </div>
+          </div> <!-- /.container-fluid -->
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- Sign in popup -->
+    <div class="modal fade signIn" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">Sign In</h4>
+          </div>
+          <div class="modal-body">
+            <form id="loginLightboxForm" name="loginLightboxForm" method="post" action="/j_spring_security_check" onsubmit="findRedirection();">
+              <div class="form-group">
+                <input id="lightboxusername" type="text" name="j_username" value="Username" onFocus="clearText(this)" onBlur="clearText(this)" class="form-control" placeholder="Username or email(case sensitive)">
+                  </div>
+                 <div class="form-group">
+                <input id="lightboxpassword" type="text" name="j_password" value="Password" onFocus="clearPassword(this)" onBlur="clearPassword(this)" class="form-control" placeholder="Password (case sensitive)">
+                 </div>
+                <div class="form-group">
+                <input type="submit" class="btn btn-info  btn-block " value="Submit"/>
+                <input type="hidden" name ="username" id ="ref1" >
+               </div>
+               </form>
+               <div class="form-group">
+                <p class="text-center"><a href="/security/forgotPassword.ai">Forgot your password?</a> | <a href="/security/support.ai">Need help?</a></p>
+                <div class="divider mt-30"></div>
+                <p class="text-center mt-20 mb-20">Don't have an account?</p>
+                <p class="logError text-error" style="display:none">wrong user name and password</p>
+                <form action="/shoppingCart/registration.ai">
+                 <input type="submit" class="btn btn-info btn-block subscribe-btn" value="Subscribe" />
+                          </form>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+<!-- end Sign in popup -->
+
+
+
+
+
+
+<link rel="stylesheet" href="/styles/styles.css" type="text/css" media="screen, print" />
+<link rel="stylesheet" href="/styles/main.css" />
+<!-- <script type="text/javascript" src="/scripts/lot-detail.js"></script>
+<script type="text/javascript" src="/scripts/library/ad-server.js"></script>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript"> google.load("prototype", "1.6"); google.load("scriptaculous", "1.8.1");</script> -->
+<script type="text/javascript">
+ var flagPopUp  = false;
+ var countPopUp = 0;
+ var div_id ='';
+ var divcheckflag = false;
+ window.onclick = function (){
+     if(countPopUp>0 && !flagPopUp){
+         // $j(".savelotpopover").css("display","none");
+         if(div_id != '' && !divcheckflag){
+             $j('#'+div_id).css("display", "none");
+             div_id = '';
+         }
+
+         if(!divcheckflag){
+             countPopUp =0;
+         }
+     } 
+
+     flagPopUp=false;
+     divcheckflag = false;
+
+ };
+ function checkDivClick(){debugger;
+ divcheckflag = true;   
+}
+ function slideMe(menuID,testID){debugger;
+ if(countPopUp >0){
+      if(div_id != ''){
+    	$('#'+div_id).css("display", "none");
+       countPopUp =0;
+  }
+ }
+ 
+ if(div_id!=testID){
+      if(!flagPopUp && countPopUp==0){   
+    	  $('#'+testID).css("display", "block");
+          flagPopUp  = true;
+          countPopUp = 1;
+          div_id = testID;
+      }
+      
+  }
+  else{            
+          $('#'+testID).css("display", "none");
+          flagPopUp  = false;
+          div_id = '';
+          countPopUp = 0; 
+      }           
+} 
+    </script>
+    <script type="text/javascript">
+    
+    function saveLot(input){
+        
+        var rawSelectedListArray =[];
+        for (var i=0;i < document.results.moveToTargetListIds.length; i++) {
+                if(document.results.moveToTargetListIds[i].checked){
+                             rawSelectedListArray[i]=document.results.moveToTargetListIds[i].value;
+                }
+          }
+        if(rawSelectedListArray.length != 0){
+            var url ="/ajax-handler/saveLotController?lotId="+input+"&selectedListIds=";
+           
+            
+            var selectedListArray = rawSelectedListArray.filter(function(x){
+        	    var length = x.toString();
+               return length>0;
+           });
+            
+             
+            for (var j=0;j < selectedListArray.length; j++) {
+                    url=url+'-'+selectedListArray[j];
+            }
+           
+
+            var x = RemoteRequestObject();
+           
+            x.open("GET",url,true);
+
+            x.onreadystatechange=function()
+            {
+                    if(x.readyState == 4 && x.status == 200)
+                    {
+                        refreshPage();
+
+                    }
+            };
+            x.send(null);
+
+            return false;
+        }else{
+            openDeleteLotPopUp();
+        }
+    }
+        function refreshPage(){
+            window.location.reload();
+        }
+        function openDeleteLotPopUp(){
+            findCheckedlots();  
+            jQuery("#deletePopupBackground").removeClass().addClass("show");
+            jQuery("#divDeletePopup").removeClass().addClass("show"); 
+        }
+        function hideLotDelPop(){
+            jQuery("#deletePopupBackground").removeClass().addClass("hide");
+            jQuery("#divDeletePopup").removeClass().addClass("hide"); 
+
+        }
+        function findCheckedlots(){
+            jQuery(".deleteButtonPopUp").css("margin","0px 0px 0px 100px");
+            var checkedcountpopUp=   0;
+            var l_msg       =   '';
+            jQuery("input[name='moveToTargetListIds']:checked").each(function() {
+                checkedcountpopUp = checkedcountpopUp+1;
+            });
+            if(checkedcountpopUp < 1){
+                l_msg   =   'Please select at least one collectionresult';
+                jQuery("#noLots").text(l_msg);                
+            }            
+        }
+    </script>
+    <script type="text/javascript">
+    function createNewCollection(id){
+
+            
+                    jQuery('#'+id+'newCollectionLink').hide();
+                    jQuery('#'+id+'save').hide();
+                    jQuery('.'+id+'newCollectionCreateContainer').show();
+
+                    //textbox to create new collection
+                    var trigTime = 0;
+                    jQuery('.'+id+'newCollectionTextbox').keydown(function(event) {
+                            //var collectionId = $j(event.target).attr("name");
+                            if(event.keyCode == 13) {
+                                    trigTime++;
+                                    event.preventDefault();
+                                    if (trigTime ==1){	renewMenu(id);}
+
+                                    return;
+                            }
+                            return;
+                    });
+            }
+    </script>
+    <script type="text/javascript">
+    function renewMenu(id) {
+                        if(jQuery('.'+id+'newCollectionTextbox').val() != "") {
+                         jQuery.ajax({
+                        type : "POST",
+                        url : "/ajaxResultCarrier.jsp", //submit to this page
+                        data : "actionType=create&newCollection=" + jQuery('.'+id+'newCollectionTextbox').val(),
+                        success : function(msg) {
+                            var index = msg.indexOf(" ");
+                            var newMsg = msg.substring(0,index);
+                            var type = typeof msg;
+                            var newId = newMsg;
+                            jQuery(".addnew_coll_ul")
+                                .prepend('<li class="savelot-item"><input type="checkbox" name="moveToTargetListIds" value="'
+                                                +newId+'" /> <a href="searchSavedLotsFromList.action?userSavedListId='+newId+'" class="collectionLots">'
+                                                                +jQuery('.'+id+'newCollectionTextbox').val()+' (0) lots</a></li>');
+
+                        }
+                        });
+                        }
+                        jQuery('#'+id+'newCollectionLink').show();
+                        jQuery('#'+id+'save').show();
+                        jQuery('.'+id+'newCollectionCreateContainer').hide();
+                        return;
+                }
+                </script>
+       <script type="text/javascript">
+              function RemoteRequestObject()
+            {
+            	 var xhr;
+                if (window.XMLHttpRequest)     // Object of the current windows
+                {
+                    xhr = new XMLHttpRequest();     // Firefox, Safari, ...
+                } else if (window.ActiveXObject)   // ActiveX version
+                {
+                    xhr = new ActiveXObject("Microsoft.XMLHTTP");  // Internet Explorer
+                }
+
+                return xhr;
+            }
+            </script>
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+    	jQuery("#25").removeClass().addClass("result_pager_label_font_nonClicked");
+        jQuery("#50").removeClass().addClass("result_pager_label_font_nonClicked");
+        jQuery("#100").removeClass().addClass("result_pager_label_font_nonClicked");
+        var myVar = "";
+          myVar ="25";
+        jQuery("#"+myVar).removeClass().addClass("result_pager_label_font_clicked");
+        
+       
+    });
+    
+</script>
+    <script type="text/javascript">
+     
+    function sort() {
+   	if ($('#sort-order').val() == '') return;
+  	$('#sort').val($('#sort-order').val());
+	$('#result-form').submit();
+}
+    
+    function cur() {
+    	if ($('#select-cur').val() == '') return;
+    	$('#currency').val($('#select-cur').val());
+    	$('#result-form').submit();
+    }
+    
+     function turn(toPage) {
+    	if ($('#page').val() == toPage) return;
+    	$('#page').val(toPage);
+      	if (($('#sort').val() == '')) $('#sort').val( '3');
+    	$('#result-form').submit();
+    	         	    } 
+     function pagerFunction(page_req){
+        var p_url   =   location.href;
+    	    var l_action_postition  =   p_url.indexOf("slice");
+    	            if(l_action_postition == -1){
+    	            l_action_postition  =   p_url.indexOf("action");
+    	            p_url   =   p_url.substring(0, l_action_postition+6);
+    	            p_url   =   p_url+'?slice='+page_req;
+    	            }
+    	            else{
+    	            p_url   =   p_url.substring(0, l_action_postition+6);
+    	            p_url   =   p_url+page_req; 
+    	                
+    	            }
+    	    window.location = p_url;
+    	    
+    	}
+        </script>
+  </head>
+  <body id="bodyLOT">
+
+
+    <div class="container">
+      <!------ Search Section -->
+      <div class="searchsection mt-30 mb-30">
+     <!-- 
+        <div class="searchhead">
+           <h2>Blouin Art Sales Index <span></span></h2>
+        </div>
+         <div class="divider"></div> -->
+        <form name="result-form" id="result-form" action="/results.action" theme="simple">
+		<input type="hidden" name="page" id="page" value="" />
+		<input type="hidden" name="sort" id="sort" value="" />
+		<input type="hidden" name="uom" id="uom" value="in" />
+		<input type="hidden" name="dir" id="dir" value="desc" />
+		<input type="hidden" name="currency" id="currency" value="USD" />
+        <input type="hidden" name="slice" id="slice" value="25" />
+	</form>
+	   <div class="searchhead">
+		    
+		 <h2 class="mt-0"><b></b>&rdquo;Xi Guo&rdquo;</b></h2>
+		 <p>(18 Results of 18 Total)</p>
+		</div> 
+		<form name="results" id="results" method="post">
+		<div class="options-container clearfix" width="100%">
+                                
+                                <div id="pager_outer_div" class="options" style="padding-top:15px;float:left">
+                                <label class="result_pager_label_font" style="float: left;">RESULTS PER PAGE</label>
+                                <div id="pager_div" style="float: left;padding-left: 10px;">
+                                    <table>
+                                        <tr>                                            
+                                            <td id="25" style="padding-right: 8px;cursor:pointer" onclick="pagerFunction(25);">25</td>
+                                            <td id="50" style="padding-right: 8px;cursor:pointer" onclick="pagerFunction(50);">50</td>
+                                            <td id="100" style="cursor:pointer;" onclick="pagerFunction(100);">100</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                </div>
+                            
+				
+				<div class="options sel2 curancy" style="padding-left:25px; float:right">
+                                    <label>CURRENCY OF SALE</label>
+					
+					<select name="select-cur" onChange="cur();" size="1" id="select-cur" class="right">
+						<option value="EUR" >EUR - Euros</option>
+						<option value="GBP" >GBP - British Pound</option>
+						<option value="USD"  selected="selected" >USD - US Dollar</option>
+					</select>
+				</div>
+				<div class="options sel1 curancy" style="float:right">
+                                    <label>SORT BY</label>
+					
+					<select name="sort-order" onChange="sort();" size="1" id="sort-order">
+						<option value="1" >Sale Price (high to low)</option>
+						<option value="2" >Sale Price (low to high)</option>
+						<option value="3"  selected="selected" >Sale Date</option>
+						<option value="4" >Auction House / Lot Number</option>
+						<option value="5" >Artist</option>
+						<option value="6" >Artwork Title</option>
+						<option value="7" >Year</option>
+						<option value="8" >Medium</option>
+						<option value="9" >Image</option>
+					</select>
+				</div>
+			</div>
+		 <div class="divider mt-30"></div>
+		  <div class="divider"></div>
+		<div class="table-responsive">
+		<table class="table table-condensed">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Sale Date </th>
+            <th>Sale Details</th>
+			<th>Estimate</th>
+			<th>Price Sold</th>
+          </tr>
+        </thead>
+        <tbody>
+	    
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Shen-Zhou-6839824/Snowscape-1490">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-132712/2727.jpg"
+                                                                                                                                                alt="Snowscape by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6839824">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6839824','6839824BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6839824BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6839824save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6839824);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6839824newCollectionLink"
+														onclick="createNewCollection('6839824');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6839824newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6839824newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6839824"
+															class="6839824newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6839824newCollectionButton"
+															onclick="renewMenu('6839824')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Shen-Zhou-6839824/Snowscape-1490" style="color:#222"/>
+				
+				Attributed to
+				
+				
+				
+				Shen Zhou
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1427,  d. 1509)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Shen-Zhou-6839824/Snowscape-1490" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Shen-Zhou-6839824/Snowscape-1490" />Snowscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    1490
+				
+                </br>
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              October 01, 2017
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Sotheby&#039;s Hong Kong
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Fine Classical Chinese Paintings
+                                                </br>
+			                        Lot2727
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 10,256
+															- &#36; 15,384 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 13,621 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Zhang-Daqian-6220766/Landscape-1980">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-123664/90.jpg"
+                                                                                                                                                alt="Landscape by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6220766">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6220766','6220766BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6220766BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6220766save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6220766);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6220766newCollectionLink"
+														onclick="createNewCollection('6220766');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6220766newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6220766newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6220766"
+															class="6220766newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6220766newCollectionButton"
+															onclick="renewMenu('6220766')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Zhang-Daqian-6220766/Landscape-1980" style="color:#222"/>
+				
+				
+				
+				Zhang Daqian
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1899,  d. 1983)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Zhang-Daqian-6220766/Landscape-1980" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Zhang-Daqian-6220766/Landscape-1980" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    1980
+				
+                </br>
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              April 07, 2015
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian Hong Kong
+                                                </div>
+			                    <div class="results-lot-info">
+                                                China Guardian Hong Kong 2015 Spring Auctions - Chinese Painting and Calligraphy from the Four Seas (I)
+                                                </br>
+			                        Lot90
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 232,189
+															- &#36; 28,378 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 474,699 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-5861878/Untitled-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5861878">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5861878','5861878BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5861878BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5861878save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5861878);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5861878newCollectionLink"
+														onclick="createNewCollection('5861878');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5861878newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5861878newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5861878"
+															class="5861878newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5861878newCollectionButton"
+															onclick="renewMenu('5861878')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-5861878/Untitled-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-5861878/Untitled-" />Untitled</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              January 25, 2015
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                Spring Greeting - Chinese Paintings &amp; Calligraphy
+                                                </br>
+			                        Lot4327
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 2,203 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Guo-Xi-6228085/Landscape-1811">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-123714/ 1675.jpg"
+                                                                                                                                                alt="Landscape by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6228085">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6228085','6228085BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6228085BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6228085save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6228085);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6228085newCollectionLink"
+														onclick="createNewCollection('6228085');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6228085newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6228085newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6228085"
+															class="6228085newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6228085newCollectionButton"
+															onclick="renewMenu('6228085')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-6228085/Landscape-1811" style="color:#222"/>
+				
+				
+				
+				Zhang Yin
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1761,  d. 1829)
+	            
+				
+				
+				</span>
+				
+				<a href="/auctions/-Guo-Xi-6228085/Landscape-1811" style="color:#222"/>
+				
+				After
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-6228085/Landscape-1811" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    1811
+				
+                </br>
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              November 22, 2014
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                China Guardian 2014 Autumn Auctions - Classical Chinese Painting and Calligraphy
+                                                </br>
+			                        Lot1675
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 13,056
+															- &#36; 19,584 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 41,289 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Guo-Xi-6452505/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-125929/ 1196.jpg"
+                                                                                                                                                alt="Landscape by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6452505">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6452505','6452505BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6452505BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6452505save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6452505);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6452505newCollectionLink"
+														onclick="createNewCollection('6452505');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6452505newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6452505newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6452505"
+															class="6452505newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6452505newCollectionButton"
+															onclick="renewMenu('6452505')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-6452505/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-6452505/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              December 15, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                36th China Guardian Quarterly Auctions - Classical Chinese Painting and Calligraphy
+                                                </br>
+			                        Lot1196
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 6,584
+															- &#36; 9,876 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 7,571 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-5038743/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5038743">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5038743','5038743BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5038743BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5038743save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5038743);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5038743newCollectionLink"
+														onclick="createNewCollection('5038743');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5038743newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5038743newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5038743"
+															class="5038743newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5038743newCollectionButton"
+															onclick="renewMenu('5038743')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-5038743/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-5038743/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              June 05, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2013 Spring Auction - Classical Chinese Paintings and Calligraphy
+                                                </br>
+			                        Lot4617
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 488,699
+															- &#36; 570,150 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 562,005 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Guo-Xi-4942661/Landscape-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-109424/1754.jpg"
+                                                                                                                                                alt="Landscape by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4942661">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4942661','4942661BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4942661BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4942661save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4942661);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4942661newCollectionLink"
+														onclick="createNewCollection('4942661');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4942661newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4942661newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4942661"
+															class="4942661newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4942661newCollectionButton"
+															onclick="renewMenu('4942661')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4942661/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4942661/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              March 25, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                33rd China Guardian Quarterly Auctions - Chinese Painting and Calligraphy IX
+                                                </br>
+			                        Lot1754
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 804
+															- &#36; 1,286 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 12,019 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-5030582/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5030582">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5030582','5030582BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5030582BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5030582save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5030582);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5030582newCollectionLink"
+														onclick="createNewCollection('5030582');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5030582newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5030582newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5030582"
+															class="5030582newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5030582newCollectionButton"
+															onclick="renewMenu('5030582')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-5030582/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-5030582/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              January 20, 2013
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 21st Fine Arts Auction - Classic-Chinese Paintings &amp; Calligraphy (V)
+                                                </br>
+			                        Lot4443
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 10,171 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4908800/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4908800">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4908800','4908800BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4908800BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4908800save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4908800);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4908800newCollectionLink"
+														onclick="createNewCollection('4908800');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4908800newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4908800newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4908800"
+															class="4908800newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4908800newCollectionButton"
+															onclick="renewMenu('4908800')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4908800/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4908800/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              August 12, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 19th Fine Artwork Auction - Ancient Paintings and Calligraphies from overseas collectors
+                                                </br>
+			                        Lot6095
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 14,453 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4908869/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4908869">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4908869','4908869BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4908869BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4908869save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4908869);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4908869newCollectionLink"
+														onclick="createNewCollection('4908869');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4908869newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4908869newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4908869"
+															class="4908869newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4908869newCollectionButton"
+															onclick="renewMenu('4908869')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4908869/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4908869/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              August 12, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 19th Fine Artwork Auction - Ancient Paintings and Calligraphies from overseas collectors
+                                                </br>
+			                        Lot6152
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 5,419 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4589055/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4589055">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4589055','4589055BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4589055BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4589055save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4589055);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4589055newCollectionLink"
+														onclick="createNewCollection('4589055');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4589055newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4589055newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4589055"
+															class="4589055newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4589055newCollectionButton"
+															onclick="renewMenu('4589055')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4589055/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4589055/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              January 09, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 17th Fine Artwork Auction- Chinese Painting and Calligraphy Part I
+                                                </br>
+			                        Lot512
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 2,185 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4593960/[Untitled]-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4593960">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4593960','4593960BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4593960BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4593960save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4593960);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4593960newCollectionLink"
+														onclick="createNewCollection('4593960');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4593960newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4593960newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4593960"
+															class="4593960newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4593960newCollectionButton"
+															onclick="renewMenu('4593960')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4593960/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4593960/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              January 09, 2012
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                The 17th Fine Artwork Auction- Chinese Painting and Calligraphy Part I
+                                                </br>
+			                        Lot556
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 4,752
+															- &#36; 7,920 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 5,464 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Guo-Xi-6152950/Landscape-and-calligraphy-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-106144/329.jpg"
+                                                                                                                                                alt="Landscape and calligraphy by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6152950">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6152950','6152950BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6152950BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6152950save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6152950);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6152950newCollectionLink"
+														onclick="createNewCollection('6152950');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6152950newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6152950newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6152950"
+															class="6152950newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6152950newCollectionButton"
+															onclick="renewMenu('6152950')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-6152950/Landscape-and-calligraphy-" style="color:#222"/>
+				
+				Attributed to
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-6152950/Landscape-and-calligraphy-" />Landscape and calligraphy</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              December 30, 2011
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Xiling Yinshe Hangzhou
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2011 Autumn Auction
+                                                </br>
+			                        Lot329
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 44,436
+															- &#36; 55,545 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 71,176 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4547285/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4547285">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4547285','4547285BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4547285BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4547285save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4547285);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4547285newCollectionLink"
+														onclick="createNewCollection('4547285');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4547285newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4547285newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4547285"
+															class="4547285newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4547285newCollectionButton"
+															onclick="renewMenu('4547285')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4547285/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4547285/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              September 17, 2011
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                27th China Guardian Quarterly Auction
+                                                </br>
+			                        Lot2806
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 4,382
+															- &#36; 7,512 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        Bought In
+				                        
+				                        
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4356370/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4356370">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4356370','4356370BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4356370BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4356370save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4356370);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4356370newCollectionLink"
+														onclick="createNewCollection('4356370');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4356370newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4356370newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4356370"
+															class="4356370newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4356370newCollectionButton"
+															onclick="renewMenu('4356370')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4356370/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4356370/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              March 19, 2011
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    China Guardian  Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                25th China Guardian Quarterly Auction
+                                                </br>
+			                        Lot3122
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 1,826
+															- &#36; 3,349 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 6,652 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-5053796/Snowy-View-of-Mountains-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="5053796">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('5053796','5053796BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="5053796BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="5053796save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(5053796);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="5053796newCollectionLink"
+														onclick="createNewCollection('5053796');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="5053796newCollectionCreateContainer"></div>
+												<div id="newCollection" class="5053796newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="5053796"
+															class="5053796newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="5053796newCollectionButton"
+															onclick="renewMenu('5053796')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-5053796/Snowy-View-of-Mountains-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-5053796/Snowy-View-of-Mountains-" />Snowy View of Mountains</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              December 04, 2010
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                5-Year Anniversary Autumn Auction, Masterpieces Of Classical Chinese Symbolic Literati Painting And Calligraphy Evening Sale
+                                                </br>
+			                        Lot3760
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 450,270
+															- &#36; 750,450 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 504,302 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+											
+												
+                                                                                               
+													
+														<script language="JavaScript" type="text/javascript">
+															function onImgErrorSmall(source) {
+																source.src = "/images/img_unavailable100x100.png";
+																source.width = "75px";
+																// disable onerror to prevent endless loop
+																source.onerror = "";
+																return true;
+															}
+														</script>
+														<div class="image">
+															<a href="/auctions/-Guo-Xi-6803488/[Untitled]-">
+																<img class="imgid" src="http://artinfo-images-75.s3.amazonaws.com/asi2-101873/3172.jpg"
+                                                                                                                                                alt="[Untitled] by Xi Guo  "
+																		onerror="onImgErrorSmall(this)" align="center" alt="" border="1" />
+															</a>
+														</div>
+													
+                                                                                                       
+												
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="6803488">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('6803488','6803488BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="6803488BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="6803488save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(6803488);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="6803488newCollectionLink"
+														onclick="createNewCollection('6803488');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="6803488newCollectionCreateContainer"></div>
+												<div id="newCollection" class="6803488newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="6803488"
+															class="6803488newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="6803488newCollectionButton"
+															onclick="renewMenu('6803488')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-6803488/[Untitled]-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-6803488/[Untitled]-" />[Untitled]</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              September 13, 2009
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Poly International Auction Beijing
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2009 Mid-Summer &amp; 8th Fine Arts Auction- Chinese Classical Paintings and Calligraphies
+                                                </br>
+			                        Lot3172
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 1,464
+															- &#36; 1,757 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 10,661 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+             <tr>
+			<td class="srimg">
+						
+									
+										
+											
+												<div class="image">
+													<a href="/auctions/-Guo-Xi-4429497/Landscape-" class="text-center">
+													<img src="/images/img_unavailable100x100.png" alt="" width="120" height="140" border="1" />
+													</a>
+												</div>
+											
+											
+										
+									
+								
+								
+								
+								
+									 
+									<!-- DROPDOWN -->
+										
+										
+                                                                                            <div class="savelot"  id="4429497">
+                                                                                                    <button type="button" class="btn btn-default getSaveLot" value="SAVE LOT"
+                                                                                                                    onclick="slideMe('4429497','4429497BASI');">
+                                                                                                  SAVE LOT
+
+                                                                                                    </button>
+                                                                                            </div>
+                                         
+                                         
+                                            <div class="savelotpopover" style="display: block"   >  
+                                            <script>
+												 function hideLot(){$(".popover").hide();}
+											</script>
+                                            <div class="popover bottom in savelot-menu maxWidth390"  id="4429497BASI" style="display: none;width: 390px;" onclick="checkDivClick()">
+                                               <i onClick="hideLot()" class="fa fa-times-circle" aria-hidden="true" style="position:absolute;right:3px;top:3px;font-size:18px;"></i>
+                                                <div class="arrow" ></div><div class="popover-content">
+											<ul class="addnew_coll_ul" style="padding:0">
+												 
+                                                                    <li style="float: left; width: 100%; padding: 2px 0px">
+                                                                            <input type="checkbox" name=moveToTargetListIds value="139943" style="float: left;" />
+                                                                            
+                                                                            
+                                                                                    <div  class="collectionLots" style="float: left; padding-left: 5px">
+                                                                                        Collection 1 - (0) lots
+                                                                                    </div>
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                    </li>
+                                                                    
+                                                                 </ul>
+                                                <div style="border-top:1px solid #ccc; width:100%; float:left;margin:5px 0px 20px"></div>
+												<div class="save">
+													<input type="button" id="4429497save" value="SAVE" alt="Save Lot"
+															onclick="saveLot(4429497);">
+												</div>
+												<!-- start create new collection inside menu -->
+												<a class="newCollectionLink newCollectionLink_2" id="4429497newCollectionLink"
+														onclick="createNewCollection('4429497');">
+													Create a new collection...
+												</a>
+												<div id="newCollection" class="4429497newCollectionCreateContainer"></div>
+												<div id="newCollection" class="4429497newCollectionCreateContainer" style="display: none">
+													<input id="newCollection_textbox" name="4429497"
+															class="4429497newCollectionTextbox" value=""
+															maxlength="25" placeholder="Enter new collection name" type="text" />
+													<input type="button" id="4429497newCollectionButton"
+															onclick="renewMenu('4429497')"
+															class="button-create" value="CREATE" />
+												</div>
+												<!-- end create new collection inside menu -->
+											<!-- </ul> -->
+                                            </div>
+                                            </div>
+                                           </div>
+										
+									
+								
+			</td>
+			<td><!-- Artist name -->
+				<div class="result-artist-name">
+				 
+				
+				<a href="/auctions/-Guo-Xi-4429497/Landscape-" style="color:#222"/>
+				
+				
+				
+				Guo Xi
+				
+				<span class="date">
+				
+				
+			    
+	           	(b. 1023,  d. 1085)
+	            
+				
+				
+				</span>
+				
+				
+				</div>
+				<div class="results-title">
+				
+            	<a class="results-title" href="/auctions/-Guo-Xi-4429497/Landscape-" />Landscape</a>
+			    
+				</div>
+				<div class="results-date-type">
+			   	
+			   	
+			    
+				
+                
+			    
+			    
+			    Works on Paper
+			    
+				</div>
+			</td>
+             <td class="result-col3" style="width:156px"><!-- SaleDate -->
+		      <div class="results-sale-date">
+              December 19, 2007
+              </div>
+              <div class="results-sale-date">
+             
+              </div>
+         	</td>
+            <td><!-- Sale Details. -->
+				<div class="results-auction-house">
+                                                    Xiling Yinshe Hangzhou
+                                                </div>
+			                    <div class="results-lot-info">
+                                                2007 Autumn Art- Chinese Classical Painting and Calligraphy (Ming Dynasty and before)
+                                                </br>
+			                        Lot472
+			                    </div>
+			</td>
+            <td class="result-col-estimate" style="width:218px">
+				<div class="results-estimate">
+                                                     
+                                                            
+                                                
+                                              
+			                		
+										
+											
+												
+													
+														
+															&#36; 24,417
+															- &#36; 37,982 USD<br>
+														
+														
+													
+												
+												
+												
+											
+										
+										
+										
+									
+                                                                      
+                                                                      
+                                                                   
+                                                                                                                     
+                                                                 
+								</div>
+			</td>
+            <td class="result-col5" style="width:140px">
+				<div class="results-price" >
+                                                 
+                                                         
+			                        
+		                        		
+										    
+						                        
+												    
+												        &#36; 42,540 USD<br />
+												    
+												    
+												
+										    
+										    
+										    
+										
+									
+                                                                         
+                                                                                                           
+                                                                          
+                                                                       
+								</div>
+								   
+								<div class="results-price-type" > 
+                              	
+				                        
+				                        
+				                        
+				                        
+					                        
+					                        
+					                        Premium
+				                        
+			                        
+                            	</div>
+                            	
+			</td>
+          </tr>
+		  
+		 </tbody>
+      </table>
+      			<!-- START PAGINATION -->
+			<div class="pagination-bottom clearfix" style="width: 100%;">
+				
+                                
+                                <a href="#" style="pointer-events:none;float:right;"
+                                   onclick="turn(1);return false;">
+                                    <span class="next_last_serch_css" style="opacity:.5;">
+                                        Last   &gt;&gt;</span>
+                                </a>
+                                
+                                
+                                
+                                <a href="#" style="pointer-events:none;float:right;padding-right: 10px;"
+                                   ><span class="next_last_serch_css" style="opacity:.5;">
+                                        Next   &gt;</span>
+                                </a>
+                                
+                                
+                                
+                                
+				<ul id="pagination-digg" style="float:right;padding-right:10px;"><li class="active" style="margin-right: 10px;">1</li></ul> 
+                                
+                                        <a href="#" style="pointer-events:none;float:right;padding-right:10px;"
+						>
+                                            <span class="first_prev_serch_css" style="opacity:.5;">
+                                                 &lt; Previous</span>
+					</a>
+                                
+                                
+                                
+                                <a href="#" style="pointer-events:none;float:right;padding-right:10px;"
+						>
+                                            <span class="first_prev_serch_css" style="opacity:.5;">
+                                                  &lt;&lt; First</span>
+					</a>
+                                
+                                
+                                
+                                
+                                
+                                
+			</div>
+			<!-- END PAGINATION -->
+	</div>
+	<div class="divider"></div>
+	  <div class="col-xs-12 copyright mb-30 mt-30">
+		<!-- <a href="http://artsalesindex.artinfo.com/auctions/San-Yu-6486045/Pink-nude-on-floral-sheet-0">http://artsalesindex.artinfo.com/auctions/San-Yu-6486045/Pink-nude-on-floral-sheet-0</a>
+		<p>Copyright © 2017 Blouin Artinfo Corp. <span class="fright">Page1/1</span></p> -->
+	  </div>
+	
+	</div>
+	</form>
+	</div>
+	<!---------------------- End of container ------------------------------->
+   </div>
+      
+ <div class="clearfix mt-20"></div>
+ <!-- <div class="subscribe-sec">
+     <div class="container"> 
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 text-right">
+            <img src="/images/subscribe-img1.jpg" alt="subscribe-img1" />
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-7 text-center">
+            <h3>Subscribe to Blouin Art+Auction Magazine</h3>
+            <p class="mb-30">Blouin art+Aucton is the internaional art collectors bible and the worldâ€™s<br/> authority on
+inverting in art, antiques and other high end collectibles</p>
+<button class="btn btn-info">Subscribe to Print</button> <button class="btn btn-info">Subscribe to Digital</button>
+          </div>
+        </div>
+       </div>
+    </div> -->
+  <div class="newsLetterSignUp">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 text-right">
+             <label>Sign up for our Art Market Newsletter</label>
+           </div>
+          <div class="col-xs-12 col-sm-5">
+          <form action="http://artinfo.us1.list-manage.com/subscribe/post" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            	<input type="hidden" name="u" value="a4d8aedc04f0d2309b7aeb6b5" />
+						<input type="hidden" name="id" value="df23dbd3c6" />
+						<input type="hidden" id="mce-group[1]-1-3" name="group[1][8]" value="8" checked="checked" />
+            <div class="input-group">
+              <input  class="form-control" type="email" name="EMAIL" id="mce-EMAIL"  placeholder="Enter Your email address..."  aria-label="Text input with multiple buttons">
+              <div class="input-group-btn">
+                 <button type="submit" class="btn btn-info">SUBSCRIBE</button>
+               </div>
+             </div>
+             </form>
+           </div>
+
+        </div>
+      </div>
+    </div>
+      <footer>
+  <div class="container"> 
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="/index.jsp">Home</a>
+            <a href="/search.action">Advanced Search</a>
+            <a href="/search/artistLanding.ai">Artists Index</a>
+            <a href="/search/artistLanding.ai">Top 100 Artists</a>
+            
+            <a href="/security/support.ai">Contact Us</a>
+            <a href="/faqs.jsp">FAQs</a>
+            <a href="/user_agreement.jsp">Terms</a>
+            <a href="/privacy_policy.jsp">Privacy</a>
+          </div>
+          <div class="col-xs-12 text-center copyright">
+            <p>Copyright &copy; 2017 Blouin Artinfo Corp.</p>
+          </div>
+        </div>
+      </div> 
+      </footer>
+      
+	 
+    </body>
+    </html>

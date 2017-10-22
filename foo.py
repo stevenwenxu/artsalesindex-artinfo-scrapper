@@ -1,14 +1,16 @@
-
 from bs4 import BeautifulSoup
 import csv
 import requests
+import re
+import sys
 
 need_details = False
+html_filename = sys.argv[1]
 
-with open('result.html') as fp:
+with open(html_filename) as fp:
     soup = BeautifulSoup(fp, "lxml")
 
-results = soup.find_all('tr', {'class':'results'})
+results = soup.select('#results > div.table-responsive > table > tbody > tr')
 all_titles = soup.find_all('div', {'class':'results-title'})
 all_datetype = soup.find_all('div', {'class':'results-date-type'})
 all_saledate = soup.find_all('div', {'class':'results-sale-date'})
@@ -18,24 +20,29 @@ all_estimate = soup.find_all('div', {'class':'results-estimate'})
 all_resultsprice = soup.find_all('div', {'class':'results-price'})
 all_resultspricetype = soup.find_all('div', {'class':'results-price-type'})
 all_href = map(lambda x: x.contents[1]['href'], soup.find_all('div', {'class':'image'}))
+all_artist_name = soup.find_all('div', {'class':'result-artist-name'})
 
 count = len(results)
-# print len(results)
-# print len(all_href)
-# print all_resultsprice[0].text.strip().split()
+print html_filename
+print count
+# print all_artist_name[0].text.strip().split()
 
 request_headers = {'User-Agent':"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36"}
 
-with open('output.csv', 'w') as csvfile:
+with open(html_filename + '_output.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
 
-    headers = ['Link','Title','Date','Type','Sale Date','Auction House','Lot Info', 'Estimate Low','Estimate High','Price Sold', 'Price Type']
+    headers = ['Artist','Birth Year','Death Year','Title','Date','Type','Sale Date','Auction House','Lot Info', 'Estimate Low','Estimate High','Price Sold', 'Price Type']
     if need_details:
         headers += ['materials','measurements','size_notes','edition','markings','condition']
     writer.writerow(headers)
 
     for i in range(0, count):
-        fulllink = unicode('http://artsalesindex.artinfo.com' + all_href[i]).encode('utf-8')
+        # fulllink = unicode(all_href[i]).encode('utf-8')
+        namedate = ' '.join(all_artist_name[i].text.strip().split())
+        name = 'N/A'
+        birthyear = 'N/A'
+        deathyear = 'N/A'
         estimate_low = 'N/A'
         estimate_high = "N/A"
         date = 'N/A'
@@ -70,8 +77,26 @@ with open('output.csv', 'w') as csvfile:
             estimate_low = estimate[1]
             estimate_high = 'N/A'
 
+        start_index = namedate.find('(')
+        end_index = namedate.find(')')
+        if (start_index != -1 and end_index != -1):
+            name = namedate[:start_index]
+            birthinfo = namedate[start_index:end_index+1]
+            match_result = re.match(r'\(b\. ([0-9]*), d\. ([0-9]*)\)', birthinfo)
+            if match_result:
+                birthyear = match_result.group(1)
+                deathyear = match_result.group(2)
+            else:
+                print 'birth year not found: ' + namedate
+        else:
+            name = namedate
+            print 'birth info not found: ' + namedate
+
         row = [
-            fulllink,
+            # fulllink,
+            unicode(name).encode('utf-8'),
+            birthyear,
+            deathyear,
             unicode(all_titles[i].text.strip()).encode('utf-8'),
             unicode(date).encode('utf-8'),
             unicode(thetype).encode('utf-8'),

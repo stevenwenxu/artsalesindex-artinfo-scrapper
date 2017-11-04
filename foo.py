@@ -3,6 +3,7 @@ import csv
 import requests
 import re
 import sys
+from dateutil.parser import parse
 
 need_details = False
 html_filename = sys.argv[1]
@@ -51,6 +52,7 @@ with open(html_filename + '_output.csv', 'w') as csvfile:
         lot_info = map(lambda x: x.strip(), all_lotinfo[i].text.split('\n\t'))
         price_sold = all_resultsprice[i].text.strip().split()
         price_type = all_resultspricetype[i].text.strip()
+        sale_date = all_saledate[i * 2].text.strip()
 
         if len(price_sold) == 3:
             price_sold = price_sold[1]
@@ -92,6 +94,11 @@ with open(html_filename + '_output.csv', 'w') as csvfile:
             name = namedate
             print 'birth info not found: ' + namedate
 
+        try:
+            sale_date = parse(sale_date).strftime('%Y%m%d')
+        except:
+            print 'Cannot parse sale_date: ' + sale_date
+
         row = [
             # fulllink,
             unicode(name).encode('utf-8'),
@@ -100,7 +107,7 @@ with open(html_filename + '_output.csv', 'w') as csvfile:
             unicode(all_titles[i].text.strip()).encode('utf-8'),
             unicode(date).encode('utf-8'),
             unicode(thetype).encode('utf-8'),
-            unicode(all_saledate[i * 2].text.strip()).encode('utf-8'),
+            unicode(sale_date).encode('utf-8'),
             unicode(all_auctionhouse[i].text.strip()).encode('utf-8'),
             unicode(lot_info).encode('utf-8'),
             unicode(estimate_low).encode('utf-8'),
